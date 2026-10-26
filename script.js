@@ -1,12 +1,13 @@
+let toastBox = document.getElementById('toastbox');
+let successmsg = 'successfully submitted';
+let errormsg = 'please fix the error';
+let invalidsmsg = 'invalid input, check again';
+function ShowToast(msg) {
+    let toast = document.createElement('div');
 
+    toast.classList.add('toast');
+    toast.innerHTML = msg;
 
-
-let toastBox = document.getElementById('toastbox')
-
-
-function showToast(){
-   let toast =  Document.createElement('div');
-   toast.classList.add('toast');
-   toast.innerHTML = 'success';
-   toastBox.appendChild(toast);
+    toastBox.appendChild(toast);
+    
 }
